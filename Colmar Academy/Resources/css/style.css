@@ -1,0 +1,317 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+  *, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: white;
+}
+/* Nav */
+.header {
+  display: inline-flex;
+  height: 64px;
+  width: 100%;
+  background-color: white;
+  justify-content: flex-start;
+}
+.mobileheader {
+  display: none;
+}
+.logo {
+  margin-left: 24px;
+  width: 40px;
+}
+
+.topnav {
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-right: 24px;
+  align-items: center;
+  width: 100%;
+}
+span {
+  margin-left: 16px;
+}
+#titlecolor {
+  opacity: 0.3;
+}
+
+/* Main Banner */
+.maincontainer {
+  display: flex;
+  justify-content: flex-start;
+  background-color: lightgrey;
+}
+.mainbanner {
+  flex-basis: 65%;
+  padding: 32px 24px 32px 24px;
+}
+.mainphoto {
+  width: 100%;
+}
+
+.mainright {
+  display: flex;
+  flex-basis: 35%;
+  align-items: center;
+}
+.mainrightitems {
+  padding-left: 16px;
+  padding-right: 100px;
+}
+#title {
+  font-size: 2.5em;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+#paragraph {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+#paragraph2 {
+  font-size: 1em;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+.startbutton {
+  width: 100%;
+  border: 1px solid dimgrey;
+  background-color: dimgrey;
+  text-align: center;
+  padding: 8px auto;
+  color: white;
+  margin-top: 24px;
+}
+
+/* Second Container */
+.secondcontainer {
+  display: flex;
+  background-color: white;
+}
+.secondleft {
+  flex-basis: 65%;
+  padding: 32px 24px 32px 24px;
+}
+
+.infophotomain {
+  width: 100%;
+  padding-bottom: 32px;
+}
+.secondright {
+  flex-basis: 35%;
+
+}
+.itemphotocontainer {
+  flex-basis: 35%;
+}
+.mobileorientation {
+  display: none;
+}
+.itemphoto {
+  width: 100%;
+}
+
+.secondrightitems {
+  display: flex;
+  padding: 32px 16px 16px 16px;
+  align-items: center;
+}
+
+.itemtext {
+  flex-basis: 65%;
+  align-items: center;
+  padding-left: 16px;
+}
+#lecturebackground {
+  background-color: lightgrey;
+}
+
+/* Third Container */
+.thirdcontainer {
+  background-color: lightgrey;
+}
+.thirdtop {
+  padding-top: 32px;
+  padding-bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.thirdbottomcontainer {
+  padding: 0 72px 32px 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thirditemphoto {
+  width: 100%;
+}
+
+.thirditemtext {
+  padding: 16px 0 24px 16px;
+}
+.thirditemscontainer {
+  flex-basis: 33%;
+  margin-right: 32px;
+  background-color: white;
+}
+
+/* Fourth Container */
+
+.fourCBottom {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.fourCL {
+  flex-basis: 65%;
+  padding: 0 24px 32px 24px;
+}
+
+.video {
+  padding-bottom: 24px;
+  width: 100%;
+}
+
+.fourCR {
+  flex-basis: 35%;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  width: 100%;
+}
+.footerL {
+  flex-basis: 50%;
+  justify-content: flex-start;
+}
+
+.footerR {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 320px) {
+
+.maincontainer{
+  display: block;
+  }
+.header {
+  display: none;
+}
+.mobileheader {
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+}
+.logo {
+  margin-left: 0;
+}
+.mainbanner {
+    padding: 0;
+  }
+.mainrightitems {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+}
+.secondleft {
+  display: none;
+}
+.secondright {
+  flex-basis: 100%;
+  padding: 16px 16px;
+
+}
+.itemphotocontainer {
+  flex-basis: 100%;
+}
+.itemphoto {
+  display: none;
+}
+
+.mobileorientation {
+  display: block;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.secondrightitems {
+  display: block;
+  padding: 0;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.itemtext {
+  text-align: left;
+  padding: 0;
+}
+.thirdbottomcontainer {
+  display: block;
+  padding: 0 0 2px;
+}
+.thirditemphoto {
+  display: none;
+}
+.thirditemtext >#paragraph2 {
+  display: none;
+}
+.thirditemtext {
+  width: 100%;
+  text-align: left;
+  padding-left: 16px;
+}
+.thirdcontainer {
+  background-color: white;
+}
+.thirditemscontainer {
+  flex-basis: 100%;
+  background-color: lightgrey;
+  margin: 0 0 8px 0;
+}
+#paragraph {
+  margin-bottom: 0;
+}
+
+.fourCL > #paragraph, .fourCL > #paragraph2 {
+  display: none;
+}
+
+.itemtext > #paragraph, .itemtext > #paragraph2 {
+
+}
+.fourCL {
+  flex-basis: 100%;
+  padding: 0;
+}
+
+.fourCBottom {
+  display: block
+  margin: 0;
+}
+
+.fourCR {
+  display: none;
+}
+.footerR {
+  display: none;
+}
+.footerL > #paragraph2 {
+  font-size: 0.75em;
+  margin-bottom: 16px;
+}
+.footerL {
+  flex-basis: 100%;
+  justify-content: flex-start;
+}
+#lecturebackground {
+  background: none;
+}
+
+}
